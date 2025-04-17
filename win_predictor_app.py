@@ -12,7 +12,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    deliveries = pd.read_csv("deliveries_till_2024.csv")
+    deliveries = pd.read_csv("deliveries_sampled.csv")
     matches = pd.read_csv("matches_till_2024.csv")
     return deliveries, matches
 
